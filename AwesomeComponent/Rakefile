@@ -27,6 +27,9 @@ task :default => "xamarin-component/xamarin-component.exe" do
 		--icon="icons/awesome_512x512.png" \
 		--library="ios":"bin/Awesome.iOS.dll" \
 		--library="android":"bin/Awesome.Android.dll" \
+		--is-shell \
+		--package="android":"Newtonsoft.Json, Version=5.0.8" \
+		--package="ios":"Newtonsoft.Json, Version=5.0.8" \
 		--sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" \
 		--sample="Android Sample. Demonstrates Awesomeness on Android":"samples/Awesome.Android.sln"
 		END
