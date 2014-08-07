@@ -15,7 +15,7 @@ end
 
 task :default => "xamarin-component/xamarin-component.exe" do
 	line = <<-END
-	xamarin-component/xamarin-component.exe create-manually #{COMPONENT} \
+	mono xamarin-component/xamarin-component.exe create-manually #{COMPONENT} \
 		--name="My Awesome Component" \
 		--summary="Add a huge amount of awesomeness to your Xamarin apps." \
 		--publisher="Awesome Corp, Inc." \
