@@ -1,0 +1,28 @@
+%YAML 1.2
+---
+summary: My component....
+getting-started: GettingStarted.md
+details: Details.md
+license: License.md
+icons: 
+  - mycomponent_128x128.png
+  - mycomponent_512x512.png
+publisher: Xamarin
+name: My Component
+id: mycomponent
+samples: 
+  iOS Sample: samples/Awesome.iOS.sln
+publisher-url: http://xamarin.com
+no_build: true
+is_shell: true
+libraries: 
+  ios: lib/MyComponent.iOS.dll
+  android: lib/MyComponent.Android.dll
+packages:
+  android:
+    - NUnit, Version=2.6.2
+    - Newtonsoft.Json, Version=5.0.8
+  mobile: Ninject, Version=3.2.0
+  ios: log4net, Version=2.0.0
+version: "0.1"
+...
