@@ -20,7 +20,7 @@ F:\projects\md-addins\Xamarin.Ide\external\xamarin-component\src\XamComponents\b
     --library="ios":"bin/Awesome.iOS.dll" ^
     --library="android":"bin/Awesome.Android.dll" ^
     --package="android":"NUnit, Version=2.6.1" ^
-    --package="":"Newtonsoft.Json, Version=5.0.8" ^
+    --package="android":"Newtonsoft.Json, Version=5.0.8" ^
     --package="ios":"Newtonsoft.Json, Version=5.0.8" ^
     --sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" ^
     --sample="Android Sample. Demonstrates Awesomeness on Android":"samples/Awesome.Android.sln"
