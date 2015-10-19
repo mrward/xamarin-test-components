@@ -3,7 +3,7 @@ require "rake/clean"
 CLEAN.include "*.xam"
 CLEAN.include "xamarin-component"
 
-COMPONENT = "awesome-1.0.xam"
+COMPONENT = "awesome-1.1.xam"
 
 file "xamarin-component/xamarin-component.exe" do
 	puts "* Downloading xamarin-component..."
@@ -25,7 +25,10 @@ task :default => "xamarin-component/xamarin-component.exe" do
 		--getting-started="GettingStarted.md" \
 		--icon="icons/awesome_128x128.png" \
 		--icon="icons/awesome_512x512.png" \
-		--library="ios":"bin/Awesome.iOS.dll" \
+		--library="ios-unified":"bin/Awesome.iOS.dll" \
+		--library="ios-mac":"bin/Awesome.Mac.dll" \
+		--library="tvos":"bin/Awesome.tvOS.dll" \
+		--library="watchos":"bin/Awesome.WatchOS.dll" \
 		--library="android":"bin/Awesome.Android.dll" \
 		--sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" \
 		--sample="Android Sample. Demonstrates Awesomeness on Android":"samples/Awesome.Android.sln"

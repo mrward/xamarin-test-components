@@ -14,15 +14,19 @@ samples:
   iOS Sample: samples/Awesome.iOS.sln
 publisher-url: http://xamarin.com
 no_build: true
-is_shell: false
+is_shell: true
 libraries: 
   ios-unified: lib/MyComponent.iOS.dll
   mac-unified: lib/MyComponent.Mac.dll
+  tvos: lib/MyComponent.tvOS.dll
+  watchos: lib/MyComponent.WatchOS.dll
 #packages:
 #  mac-unified:
 #    - NUnit, Version=2.6.2
 #    - Newtonsoft.Json, Version=5.0.8
 #  mobile: Ninject, Version=3.2.0
 #  ios-unified: log4net, Version=2.0.0
-version: "0.1"
+#  tvos: NUnit, Version=2.6.3
+#  watchos: NUnit, Version=2.6.4
+version: "0.2"
 ...
