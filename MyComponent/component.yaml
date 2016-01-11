@@ -18,11 +18,15 @@ is_shell: true
 libraries: 
   ios: lib/MyComponent.iOS.dll
   android: lib/MyComponent.Android.dll
+  tvos: lib/MyComponent.tvOS.dll
+  watchos: lib/MyComponent.WatchOS.dll
 packages:
   android:
     - NUnit, Version=2.6.2
     - Newtonsoft.Json, Version=5.0.8
   mobile: Ninject, Version=3.2.0
   ios: log4net, Version=2.0.0
-version: "0.1"
+  tvos: Test.Xam.Unified, Version=1.5.0
+  watchos: Test.Xam.Unified, Version=1.5.0
+version: "0.2"
 ...

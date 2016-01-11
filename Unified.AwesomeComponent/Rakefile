@@ -3,7 +3,7 @@ require "rake/clean"
 CLEAN.include "*.xam"
 CLEAN.include "xamarin-component"
 
-COMPONENT = "awesome-1.1.xam"
+COMPONENT = "unified-awesome-1.1.xam"
 
 file "xamarin-component/xamarin-component.exe" do
 	puts "* Downloading xamarin-component..."
@@ -15,23 +15,22 @@ end
 
 task :default => "xamarin-component/xamarin-component.exe" do
 	line = <<-END
-	xamarin-component/xamarin-component.exe create-manually #{COMPONENT} \
-		--name="My Awesome Component" \
+	mono xamarin-component/xamarin-component.exe create-manually #{COMPONENT} \
+		--name="Unified My Awesome Component" \
 		--summary="Add a huge amount of awesomeness to your Xamarin apps." \
 		--publisher="Awesome Corp, Inc." \
 		--website="http://awesomecorp.com/component" \
 		--details="Details.md" \
 		--license="License.md" \
 		--getting-started="GettingStarted.md" \
-		--icon="icons/awesome_128x128.png" \
-		--icon="icons/awesome_512x512.png" \
+		--icon="icons/unified-awesome_128x128.png" \
+		--icon="icons/unified-awesome_512x512.png" \
 		--library="ios-unified":"bin/Awesome.iOS.dll" \
-		--library="ios-mac":"bin/Awesome.Mac.dll" \
+		--library="mac-unified":"bin/Awesome.Mac.dll" \
 		--library="tvos":"bin/Awesome.tvOS.dll" \
 		--library="watchos":"bin/Awesome.WatchOS.dll" \
-		--library="android":"bin/Awesome.Android.dll" \
 		--sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" \
-		--sample="Android Sample. Demonstrates Awesomeness on Android":"samples/Awesome.Android.sln"
+		--sample="Mac Sample. Demonstrates Awesomeness on Mac":"samples/Awesome.Mac.sln"
 		END
 	puts "* Creating #{COMPONENT}..."
 	puts line.strip.gsub "\t\t", "\\\n    "

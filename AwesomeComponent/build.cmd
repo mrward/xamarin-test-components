@@ -19,8 +19,12 @@ F:\projects\md-addins\Xamarin.Ide\external\xamarin-component\src\XamComponents\b
     --is-shell ^
     --library="ios":"bin/Awesome.iOS.dll" ^
     --library="android":"bin/Awesome.Android.dll" ^
+    --library="tvos":"bin/Awesome.tvOS.dll" ^
+    --library="watchos":"bin/Awesome.WatchOS.dll" ^
     --package="android":"NUnit, Version=2.6.1" ^
     --package="android":"Newtonsoft.Json, Version=5.0.8" ^
     --package="ios":"Newtonsoft.Json, Version=5.0.8" ^
+    --package="watchos":"Test.Xam.Unified, Version=1.5.0" ^
+    --package="tvos":"Test.Xam.Unified, Version=1.5.0" ^
     --sample="iOS Sample. Demonstrates Awesomeness on iOS.":"samples/Awesome.iOS.sln" ^
     --sample="Android Sample. Demonstrates Awesomeness on Android":"samples/Awesome.Android.sln"
